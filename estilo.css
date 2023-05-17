@@ -111,10 +111,18 @@ html{
     color: #fff;
     padding: 50px 20px;
 }
-.sobremi .contenido-seccion{
-    max-width: 1100px;
+.skills .contenido-seccion{
+    max-width:max-content;
     margin: auto;
 }
+
+.skills .contenido-seccion .name{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
 .sobremi h2{
     font-size: 48px;
     font-family: 'Righteous';
@@ -131,8 +139,13 @@ html{
     color: #1CB698;
     font-weight: bold;
 }
+.sobremi .skills .name-skill{
+    display: flex;
+    flex-wrap: wrap;
+}
 .sobremi .fila{
     display: flex;
+    padding-top: 40px;
 }
 .sobremi .fila .col
 {
@@ -142,7 +155,15 @@ html{
 .sobremi .fila .col h3{
     font-size: 28px;
     font-family: 'Righteous';
+    text-align: center;
     margin-bottom: 25px;
+}
+.sobremi .fila .col h7{
+    font-size: 28px;
+    font-family: 'Righteous';
+    text-align: center;
+    margin-bottom: 25px;
+    display: block;
 }
 .sobremi .fila .col ul{
     list-style: none;
@@ -151,9 +172,12 @@ html{
     margin: 12px 0;
 }
 .sobremi .fila .col ul li strong{
-    display: inline-block;
+    display: block;
     color: #1CB698;
     width: 130px;
+    padding-bottom: 10px;
+    align-items: center;
+
 }
 .sobremi .fila .col ul li span{
     background-color: #1CB698;
@@ -163,6 +187,7 @@ html{
 }
 .sobremi .fila .col .contenedor-intereses{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .sobremi .fila .col .contenedor-intereses .interes{
@@ -210,15 +235,142 @@ html{
     width: 100%;
 }
 /* SECCION S K I L L S */
+#JavaScript{
+    height: 100px;
+    width: 100px;;
+    transition: box-shadow .1s;
+    background:url(img/js.png) bottom right no-repeat;
+    background-size: cover;
+    margin: 40px;
+}
+#JavaScript:hover{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+#Html{
+    height: 100px;
+    width: 100px;;
+    transition: box-shadow .1s;
+    background: 
+    url(img/htmll.PNG)
+    no-repeat
+    center;
+    background-size: cover;
+    margin: 40px;
+}
+#Html:hover{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+
+#Css{
+    height: 100px;
+    width: 100px;;
+    transition: box-shadow .1s;
+    background: 
+    url(img/csss.JPG)
+    no-repeat
+    center;
+    background-size: cover;
+    margin: 40px;
+}
+#Css:hover{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+#React{
+    height: 100px;
+    width: 100px;;
+    transition: box-shadow .1s;
+    background: 
+    url(img/structure.png)
+    no-repeat
+    center;
+    background-size: cover;
+    margin: 40px;
+}
+#React:hover{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+#MySql{
+    height: 100px;
+    width: 100px;;
+    transition: box-shadow .1s;
+    background: 
+    url(img/IMG_0021\ 3.JPG)
+    no-repeat
+    center;
+    background-size: cover;
+    margin: 40px;
+}
+#MySql:hover{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+#Ruby{
+    height: 100px;
+    width: 100px;;
+    transition: box-shadow .1s;
+    background: 
+    url(img/Ruby.jpg)
+    no-repeat
+    center;
+    background-size: cover;
+    margin: 40px;
+}
+#Ruby:hover{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+#MongoDb{
+    height: 100px;
+    width: 100px;;
+    transition: box-shadow .1s;
+    background: 
+    url(img/MongoDbb.JPG)
+    no-repeat
+    center;
+    background-size: cover;
+    margin: 40px;
+}
+#MongoDb:hover{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+#Java{
+    height: 100px;
+    width: 100px;;
+    transition: box-shadow .1s;
+    background: 
+    url(img/Javaa.JPG)
+    no-repeat
+    center;
+    background-size: cover;
+    margin: 40px;
+}
+#Java:hover{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+
+#Cpp{
+    height: 100px;
+    width: 100px;;
+    transition: box-shadow .1s;
+    background: 
+    url(img/C+++.PNG)
+    no-repeat
+    center;
+    background-size: cover;
+    margin: 40px;
+}
+#Cpp:hover{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
 .skills{
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
 }
-.skills .contenido-seccion{
-    max-width: 1100px;
-    margin: auto;
+.skills .contenido-seccion .col{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .skills h2{
     font-size: 48px;
     font-family: 'Righteous';
@@ -540,10 +692,12 @@ html{
     padding: 20px 0;
 }
 .contacto .fila{
-    display: flex;
+    display: block;
+    margin: auto;
+    max-width: max-content;
 }
 .contacto .col{
-    width: 50%;
+    width: 100%;
     padding: 10px;
     position: relative;
 }
@@ -645,7 +799,7 @@ footer .arriba{
     font-size: 18px;
 }
 /* SECCION RESPONSIVE */
-@media screen and (max-width:980px){
+@media screen and (max-width:870px){
     nav{
         display: none;
     }
@@ -668,12 +822,19 @@ footer .arriba{
         padding: 10px 0;
     }
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:950px){
     .sobremi .fila{
         display: block;
     }
-    .sobremi .fila .col{
-        width: fit-content;
+    .sobremi .fila .col h7 {
+      
+        text-align: center;       
+    }
+    .sobremi .fila .col ul {
+        text-align: center;
+    }
+    .sobremi .fila .col ul li strong {
+        width: auto;
     }
 
     .skills .fila{
@@ -696,10 +857,7 @@ footer .arriba{
         margin-left: 20px;
     }
 
-    .portfolio .galeria{
-        display: block;
-        width: 100%;
-    }
+
     .portfolio .galeria .proyecto{
         max-width: 100%;
     }
@@ -708,8 +866,14 @@ footer .arriba{
     }
     .contacto .fila{
         display: block;
+        margin: auto;
+        max-width: max-content;
     }
     .contacto .fila .col{
         width: 100%;
     }
+    .skills .contenido-seccion {
+        display: block;
+        margin: auto;
+        max-width: max-content;
 }
